@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content%}
+<h1>HELLO this is index page</h1>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileUpload">
+        <button type="submit">Upload</button>
+      </form>
+
+{% endblock %}
